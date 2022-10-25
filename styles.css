@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.active-nav {
+  background-color: #ffff;
+  transition: background-color 300ms linear;
+}
+
+nav {
+  padding: 15px 70px;
+  background-color: #ffc017;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  transition: background-color 300ms linear;
+}
+
+nav .home-logo {
+  gap: 5px;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: black;
+  font-weight: 700;
+}
+
+nav .home-logo img {
+  width: 30px;
+}
+
+nav .sign-in-cta {
+  font-size: 1.4rem;
+  color: #ffff;
+  background-color: black;
+  padding: 10px 15px;
+  border-radius: 99px;
+  font-weight: 500;
+  transition: background-color 300ms linear;
+}
+
+.active-nav .sign-in-cta {
+  background-color: rgb(26, 137, 23);
+  transition: background-color 300ms linear;
+}
+
+.active-nav .sign-in-cta:hover {
+  background-color: rgb(15, 115, 12);
+}
+
+header {
+  background-color: #ffc017;
+  padding: 30px 0;
+  padding-left: 70px;
+  gap: 120px;
+  border-bottom: 1px solid black;
+}
+
+header img {
+  width: 400px;
+  height: 400px;
+}
+
+.header-info h1 {
+  font-size: 9rem;
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.header-info p {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.header-info a {
+  background-color: black;
+  color: #ffff;
+  padding: 10px 40px;
+  font-size: 2rem;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+#trending {
+  padding: 50px 70px;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+}
+
+#trending > h2 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+#trending > h2 img {
+  width: 20px;
+}
+
+.trending-stories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.trending-stories .t_s {
+  gap: 15px;
+}
+
+.trending-stories .t_s .ind {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(230, 230, 230, 1);
+}
+
+.trending-stories .t_s .inf a {
+  font-size: 1.3rem;
+  gap: 7px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.trending-stories .t_s .inf a img {
+  width: 22px;
+}
+
+.trending-stories .t_s .inf h2 a {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.trending-stories .t_s .inf .s-det {
+  font-size: 1.3rem;
+  margin-top: 8px;
+  color: rgba(117, 117, 117, 1);
+}
+
+#other-content {
+  padding: 70px;
+}
+
+/* Larger Screens */
+
+@media (min-width: 1500px) {
+  .wrapper {
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1350px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Smaller Screens */
+@media (max-width: 1025px) {
+  nav {
+    padding: 15px 30px;
+  }
+
+  header {
+    padding: 60px 30px;
+  }
+  header img {
+    display: none;
+  }
+
+  #trending {
+    padding: 50px 30px;
+  }
+
+  .trending-stories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 430px) {
+  html {
+    font-size: 60%;
+  }
+
+  nav {
+    padding: 15px;
+  }
+
+  header {
+    padding: 60px 15px;
+  }
+
+  .header-info h1 {
+    font-size: 7rem;
+  }
+
+  .header-info p {
+    font-size: 2rem;
+  }
+
+  .header-info a {
+    font-size: 1.5rem;
+  }
+
+  #trending {
+    padding: 50px 15px;
+  }
+
+  .trending-stories {
+    grid-template-columns: 1fr;
+  }
+
+  .trending-stories .t_s .inf h2 {
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
+
+/* Smaller Mobile Screens */
+@media (max-width: 321px) {
+  html {
+    font-size: 45%;
+  }
+
+  nav {
+    padding: 15px 10px;
+  }
+
+  nav .sign-in-cta {
+    padding: 10px 12px;
+  }
+
+  header {
+    padding: 60px 10px;
+  }
+
+  #trending {
+    padding: 50px 10px;
+  }
+}

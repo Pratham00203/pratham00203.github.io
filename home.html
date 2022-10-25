@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheBloggr</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="d-flex justify-center">
+    <div class="wrapper">
+      <nav class="d-flex align-center">
+        <a href="#" class="home-logo d-flex align-center">
+          <img src="images/signature.png" alt="" />
+          TheBloggr.
+        </a>
+        <a class="sign-in-cta" href="#">Get Started</a>
+      </nav>
+      <header class="d-flex align-center">
+        <div class="header-info">
+          <h1>Stay Curious.</h1>
+          <p>
+            Discover stories, thinking, and expertise from writers on any topic.
+          </p>
+          <a href="#">Start reading</a>
+        </div>
+        <img src="images/undraw_team_up_re_84ok.svg" alt="" />
+      </header>
+      <main>
+        <section id="trending">
+          <h2 class="d-flex align-center">
+            <img src="images/trending.png" alt="" /> Trending
+          </h2>
+          <div class="trending-stories">
+            <div class="t_s d-flex">
+              <p class="ind">01</p>
+              <div class="inf">
+                <a href="#" class="d-flex align-center">
+                  <img src="images/profile-pic.jpg" alt="" /> Tom Cooper
+                </a>
+                <h2><a href="#">Ukraine War, 22 October 2022</a></h2>
+                <p class="s-det">Oct 22 &middot; 10 min read</p>
+              </div>
+            </div>
+            <div class="t_s d-flex">
+              <p class="ind">02</p>
+              <div class="inf">
+                <a href="#" class="d-flex align-center">
+                  <img src="images/profile-pic.jpg" alt="" /> Tom Cooper
+                </a>
+                <h2><a href="#">Ukraine War, 22 October 2022</a></h2>
+                <p class="s-det">Oct 22 &middot; 10 min read</p>
+              </div>
+            </div>
+            <div class="t_s d-flex">
+              <p class="ind">03</p>
+              <div class="inf">
+                <a href="#" class="d-flex align-center">
+                  <img src="images/profile-pic.jpg" alt="" /> Tom Cooper
+                </a>
+                <h2><a href="#">Ukraine War, 22 October 2022</a></h2>
+                <p class="s-det">Oct 22 &middot; 10 min read</p>
+              </div>
+            </div>
+            <div class="t_s d-flex">
+              <p class="ind">04</p>
+              <div class="inf">
+                <a href="#" class="d-flex align-center">
+                  <img src="images/profile-pic.jpg" alt="" /> Tom Cooper
+                </a>
+                <h2><a href="#">Ukraine War, 22 October 2022</a></h2>
+                <p class="s-det">Oct 22 &middot; 10 min read</p>
+              </div>
+            </div>
+            <div class="t_s d-flex">
+              <p class="ind">05</p>
+              <div class="inf">
+                <a href="#" class="d-flex align-center">
+                  <img src="images/profile-pic.jpg" alt="" /> Tom Cooper
+                </a>
+                <h2><a href="#">Ukraine War, 22 October 2022</a></h2>
+                <p class="s-det">Oct 22 &middot; 10 min read</p>
+              </div>
+            </div>
+            <div class="t_s d-flex">
+              <p class="ind">06</p>
+              <div class="inf">
+                <a href="#" class="d-flex align-center">
+                  <img src="images/profile-pic.jpg" alt="" /> Tom Cooper
+                </a>
+                <h2><a href="#">Ukraine War, 22 October 2022</a></h2>
+                <p class="s-det">Oct 22 &middot; 10 min read</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="other-content"></section>
+      </main>
+    </div>
+
+    <script>
+      let sectionHeight = document.querySelector("header").clientHeight;
+      window.addEventListener("scroll", () => {
+        if (scrollY > sectionHeight - 100) {
+          document.querySelector("nav").classList.add("active-nav");
+        } else {
+          document.querySelector("nav").classList.remove("active-nav");
+        }
+      });
+    </script>
+  </body>
+</html>
