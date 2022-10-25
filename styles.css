@@ -48,9 +48,10 @@ nav {
   justify-content: space-between;
   border-bottom: 1px solid black;
   transition: background-color 300ms linear;
+  z-index: 99;
 }
 
-nav .home-logo {
+.home-logo {
   gap: 5px;
   font-family: "Playfair Display", serif;
   font-size: 3rem;
@@ -58,7 +59,7 @@ nav .home-logo {
   font-weight: 700;
 }
 
-nav .home-logo img {
+.home-logo img {
   width: 30px;
 }
 
@@ -120,16 +121,17 @@ header img {
   border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
 
-#trending > h2 {
+#trending > h2,
+.sticky-container > h2 {
   text-transform: uppercase;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
   gap: 15px;
   margin-bottom: 25px;
 }
 
 #trending > h2 img {
-  width: 20px;
+  width: 15px;
 }
 
 .trending-stories {
@@ -172,7 +174,84 @@ header img {
 }
 
 #other-content {
-  padding: 70px;
+  padding: 30px 70px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  position: relative;
+}
+
+#other-content aside,
+.h-s-container {
+  padding: 30px 0;
+}
+
+.h-s-container {
+  gap: 25px;
+}
+
+.h-s-container .h-s {
+  width: 100%;
+  height: 180px;
+  background-color: lightgray;
+}
+
+.sticky-container {
+  position: sticky;
+  top: 105px;
+}
+
+.sticky-container .tags,
+.sticky-container .other-links {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sticky-container .tags {
+  padding-bottom: 30px;
+}
+
+.sticky-container .tags a {
+  color: rgba(117, 117, 117, 1);
+  font-size: 1.3rem;
+  border: 1px solid rgba(230, 230, 230, 1);
+  padding: 6px 16px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.sticky-container .other-links a {
+  color: rgba(117, 117, 117, 1);
+  font-size: 1.4rem;
+}
+
+.sticky-container .other-links {
+  padding-top: 30px;
+  border-top: 1px solid rgba(230, 230, 230, 1);
+}
+
+footer {
+  background-color: #000;
+  padding: 40px 70px;
+}
+
+footer .home-logo {
+  color: #ffff;
+  width: fit-content;
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(230, 230, 230, 1);
+}
+
+footer ul li a {
+  color: white;
+  font-size: 1.3rem;
 }
 
 /* Larger Screens */
@@ -208,6 +287,37 @@ header img {
 
   .trending-stories {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #other-content {
+    padding: 30px;
+  }
+
+  footer {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 769px) {
+  #other-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  #other-content aside {
+    order: 1;
+  }
+
+  .sticky-container .other-links {
+    display: none;
+  }
+
+  .sticky-container .tags {
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+  }
+
+  #other-content .h-s-container {
+    order: 2;
   }
 }
 
@@ -249,6 +359,14 @@ header img {
     font-weight: 700;
     font-size: 15px;
   }
+
+  #other-content {
+    padding: 30px 15px;
+  }
+
+  footer {
+    padding: 40px 15px;
+  }
 }
 
 /* Smaller Mobile Screens */
@@ -271,5 +389,13 @@ header img {
 
   #trending {
     padding: 50px 10px;
+  }
+
+  #other-content {
+    padding: 30px 10px;
+  }
+
+  footer {
+    padding: 40px 10px;
   }
 }
