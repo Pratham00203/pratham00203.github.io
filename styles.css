@@ -189,6 +189,7 @@ a {
 
 .h-s-container {
   gap: 32px;
+  position: relative;
 }
 
 .h-s-container .h-s {
@@ -271,6 +272,42 @@ a {
   height: 13rem;
 }
 
+.h-s-container .h-s-load-more {
+  background-color: #ffff;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+}
+
+.h-s-container .h-s-load-more button {
+  background-color: #ffff;
+  border: 1px solid rgb(117, 117, 117);
+  border-radius: 99px;
+  padding: 9px 15px;
+  color: rgba(41, 41, 41, 1);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.skeleton-h-s .h-s-info p {
+  height: 10px;
+  width: 100%;
+  background-color: lightgray;
+  margin-bottom: 10px;
+}
+
+.skeleton-h-s .h-s-info .skeleton-line-sm {
+  width: 30%;
+}
+.skeleton-h-s .h-s-info .skeleton-line-md {
+  width: 80%;
+}
+
+.skeleton-h-s .skeleton-img {
+  height: 13rem;
+  background-color: lightgray;
+}
+
 .sticky-container {
   position: sticky;
   top: 105px;
@@ -308,6 +345,7 @@ a {
 footer {
   background-color: #000;
   padding: 40px 70px;
+  margin-top: 50px;
 }
 
 footer .home-logo {
