@@ -585,14 +585,15 @@ footer ul li a {
   /* Login Page CSS */
 
   .login-container {
-    padding: 0;
-    height: 100%;
+    padding: 10% 0;
+    background-color: white;
   }
 
   .login-container .login-form {
     width: 100%;
     border-radius: 0;
     padding: 80px 30px;
+    box-shadow: none;
   }
 }
 
