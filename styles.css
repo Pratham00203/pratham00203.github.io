@@ -586,6 +586,7 @@ footer ul li a {
 
   .login-container {
     padding: 0;
+    height: 100%;
   }
 
   .login-container .login-form {
