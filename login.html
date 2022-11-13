@@ -8,6 +8,38 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="d-flex justify-center">
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <div class="login-container d-flex justify-center align-center">
+        <div class="login-form">
+          <h1>Welcome Back.</h1>
+          <p class="login-text">Log in to access your profile, publish and explore stories.</p>
+          <form class="d-flex flex-col align-center">
+            <div class="form-field">
+              <input type="email" name="email" placeholder="Email"/>
+            </div>
+            <div class="form-field password-field">
+              <input type="password" name="password" placeholder="Password"/>
+              <img class="show-password-btn" src="images/eye.png" alt="" />
+            </div>
+            <button type="submit" class="submit-btn"/>Login</button>
+          </form>
+          <p>Don’t have an account? <a href="register.html">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let showPassword = 1;
+      document.querySelector('.show-password-btn').addEventListener('click',()=>{
+        if(showPassword === 1){
+          document.querySelector('.password-field input').setAttribute('type','text');
+          showPassword = 0;
+        }
+        else{
+          document.querySelector('.password-field input').setAttribute('type','password');
+          showPassword = 1;
+        }
+      })
+    </script>
   </body>
 </html>
