@@ -1,12 +1,14 @@
 // User Schema
 const User = {
   id: "",
+  role: "", //User or Admin
   username: "",
   email: "",
   password: "",
   profileImg: "",
   coverImg: "",
   bio: "",
+  interests: [],
   createdAt: "",
 };
 
@@ -30,7 +32,16 @@ const Story = {
   storyImg: "",
   category: "",
   viewsCount: "",
+  totalMinutesToRead: "",
   postedOn: "",
+};
+
+//Rating Schema
+const Rating = {
+  id: "",
+  userid: "",
+  storyId: "",
+  rating: "",
 };
 
 //Bookmarks Schema
@@ -92,4 +103,13 @@ const ReportUser = {
   reportedUser: "",
   reason: "",
   reportedOn: "",
+};
+
+//Requests Schema
+const Request = {
+  id: "",
+  email: "",
+  username: "",
+  description: "",
+  attachments: "",
 };
