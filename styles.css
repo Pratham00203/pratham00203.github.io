@@ -70,7 +70,8 @@ input:focus {
 }
 
 .h-nav .sign-in-cta,
-.no-following button {
+.no-following button,
+.y-s-header a {
   font-size: 1.4rem;
   color: #ffff;
   background-color: black;
@@ -83,13 +84,15 @@ input:focus {
 }
 
 .active-nav .sign-in-cta,
-.no-following button {
+.no-following button,
+.y-s-header a {
   background-color: rgb(26, 137, 23);
   transition: background-color 300ms linear;
 }
 
 .active-nav .sign-in-cta:hover,
-.no-following button:hover {
+.no-following button:hover,
+.y-s-header a:hover {
   background-color: rgb(15, 115, 12);
 }
 
@@ -655,7 +658,8 @@ footer ul li a {
 }
 
 .main-home .main-feed-content .recommendation-container.h-s-container .h-s,
-.main-home .main-feed-content .following-container.h-s-container .h-s {
+.main-home .main-feed-content .following-container.h-s-container .h-s,
+.your-stories-main .h-s-container .h-s {
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
@@ -665,6 +669,85 @@ footer ul li a {
 
 .no-following button {
   margin-top: 15px;
+}
+
+/* Your Stories Page */
+.y-s-header {
+  padding: 30px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #ffff;
+}
+
+.y-s-header h1 {
+  font-size: 3.5rem;
+}
+
+.your-stories-main .h-s-container .h-s .h-s-info .h-s-attr .story-menu {
+  position: relative;
+  margin-left: auto;
+  font-size: 1.3rem;
+}
+
+.your-stories-main .h-s-container .h-s .h-s-info .h-s-attr .story-menu ul {
+  list-style: none;
+  position: absolute;
+  width: 130px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgb(0 0 0 / 15%);
+  gap: 10px;
+  top: 20px;
+  right: 0;
+  z-index: 100;
+  display: none;
+}
+
+.your-stories-main
+  .h-s-container
+  .h-s
+  .h-s-info
+  .h-s-attr
+  .story-menu
+  ul.active {
+  display: flex !important;
+}
+
+.your-stories-main .h-s-container .h-s .h-s-info .h-s-attr .story-menu ul li a {
+  color: #212529;
+}
+
+.your-stories-main
+  .h-s-container
+  .h-s
+  .h-s-info
+  .h-s-attr
+  .story-menu
+  ul
+  li:last-child
+  a {
+  color: rgb(231, 8, 8);
+}
+
+.your-stories-main .h-s-container .h-s .h-s-info .h-s-attr .story-menu button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.your-stories-main
+  .h-s-container
+  .h-s
+  .h-s-info
+  .h-s-attr
+  .story-menu
+  button
+  img {
+  width: 18px;
 }
 
 /* Larger Screens */
@@ -787,6 +870,10 @@ footer ul li a {
 
   #main {
     padding: 20px 35px;
+  }
+
+  .y-s-header a {
+    display: none;
   }
 }
 
