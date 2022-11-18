@@ -71,7 +71,8 @@ input:focus {
 
 .h-nav .sign-in-cta,
 .no-following button,
-.y-s-header a {
+.y-s-header a,
+.main-aside .author-profile .follow {
   font-size: 1.4rem;
   color: #ffff;
   background-color: black;
@@ -85,14 +86,16 @@ input:focus {
 
 .active-nav .sign-in-cta,
 .no-following button,
-.y-s-header a {
+.y-s-header a,
+.main-aside .author-profile .follow {
   background-color: rgb(26, 137, 23);
   transition: background-color 300ms linear;
 }
 
 .active-nav .sign-in-cta:hover,
 .no-following button:hover,
-.y-s-header a:hover {
+.y-s-header a:hover,
+.main-aside .author-profile .follow:hover {
   background-color: rgb(15, 115, 12);
 }
 
@@ -284,6 +287,7 @@ input:focus {
 
 .h-s .h-s-img img {
   height: 13rem;
+  width: 19.5rem;
 }
 
 .h-s-load-more {
@@ -750,6 +754,46 @@ footer ul li a {
   width: 18px;
 }
 
+/* Individual Story Page */
+.main-aside .author-profile {
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+}
+
+.main-aside .author-profile a img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.main-aside .author-profile h2 {
+  margin: 10px 0 7px 0;
+}
+
+.main-aside .author-profile h2 a {
+  font-size: 1.7rem;
+  color: rgba(41, 41, 41, 1);
+}
+
+.main-aside .author-profile p:first-of-type {
+  color: rgba(117, 117, 117, 1);
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.main-aside .author-profile p {
+  color: rgba(117, 117, 117, 1);
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+
+.main-aside .author-profile .follow.following {
+  background-color: transparent !important;
+  border: 1px solid rgb(15, 115, 12) !important;
+  color: rgb(15, 115, 12) !important;
+  transition: none !important;
+}
+
 /* Larger Screens */
 
 @media (min-width: 1500px) {
@@ -921,11 +965,15 @@ footer ul li a {
   }
 
   .h-s-container .h-s {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    display: flex !important;
+    gap: 15px;
   }
 
-  .h-s .h-s-img {
-    display: none;
+  .h-s .h-s-img img {
+    /* display: none; */
+    width: 6rem;
+    height: 4rem;
   }
   footer {
     padding: 40px 15px;
