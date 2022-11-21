@@ -28,7 +28,8 @@ const Story = {
   username: "",
   userProfileImg: "",
   title: "",
-  description: "",
+  htmlDescription: "",
+  textDescription: "",
   storyImg: "",
   category: "",
   viewsCount: "",
@@ -90,7 +91,8 @@ const ReportStories = {
   id: "",
   userId: "",
   storyId: "",
-  reason: "",
+  description: "",
+  attachments: "",
   reportedOn: "",
 };
 
@@ -101,7 +103,8 @@ const ReportUser = {
   userId: "",
   //Person who is being reported
   reportedUser: "",
-  reason: "",
+  description: "",
+  attachments: "",
   reportedOn: "",
 };
 
