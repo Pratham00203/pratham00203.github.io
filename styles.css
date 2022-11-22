@@ -885,7 +885,7 @@ footer ul li a {
 
 .comments-section h2,
 .more-by-author h2 {
-  font-size: 2.2rem;
+  font-size: 2.3rem !important;
   margin-bottom: 15px;
 }
 
@@ -1031,6 +1031,7 @@ textarea:focus {
 .more-by-author > h2 {
   padding-bottom: 30px;
   border-bottom: 1px solid rgb(230, 230, 230);
+  color: rgba(41, 41, 41, 0.6);
 }
 
 /* Search Results Page */
@@ -1040,7 +1041,8 @@ textarea:focus {
   color: rgba(41, 41, 41, 0.6);
 }
 
-.search-results > h1 span {
+.search-results > h1 span,
+.more-by-author > h2 span {
   color: rgba(41, 41, 41, 1);
 }
 
@@ -1067,6 +1069,10 @@ textarea:focus {
 .people-res .people-info .people-det p {
   font-size: 1.3rem;
   color: rgba(117, 117, 117, 1);
+}
+
+.people-result-container {
+  padding-bottom: 45px;
 }
 
 .story-result-container {
@@ -1217,6 +1223,10 @@ textarea:focus {
 
   .y-s-header a {
     display: none;
+  }
+
+  .more-by-author {
+    padding-bottom: 70px;
   }
 }
 
