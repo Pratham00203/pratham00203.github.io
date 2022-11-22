@@ -344,6 +344,42 @@
                 </div>
               </div>
             </div>
+            <div class="more-by-author">
+              <h2>More by Chuck Norris</h2>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+
+                    <button class="btn" style="margin-left: auto">
+                      <img src="images/bookmark.png" alt="" />
+                    </button>
+                  </p>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+            </div>
           </div>
         </section>
         <aside class="main-aside">
@@ -444,9 +480,11 @@
         .addEventListener("click", () => {
           speech.text = document.querySelector(".story-desc").innerText;
           window.speechSynthesis.speak(speech);
-          document.querySelector(".text-speech-player").classList.add("active");
         });
 
+      speech.addEventListener("start", () => {
+        document.querySelector(".text-speech-player").classList.add("active");
+      });
       document.querySelector("#pause").addEventListener("click", () => {
         window.speechSynthesis.pause();
       });
@@ -457,6 +495,12 @@
 
       document.querySelector("#cancel").addEventListener("click", () => {
         window.speechSynthesis.cancel();
+        document
+          .querySelector(".text-speech-player")
+          .classList.remove("active");
+      });
+
+      speech.addEventListener("end", () => {
         document
           .querySelector(".text-speech-player")
           .classList.remove("active");
