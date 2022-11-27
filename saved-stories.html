@@ -15,17 +15,19 @@
             ><img src="images/signature.png" alt=""
           /></a>
           <div class="main-menu d-flex flex-col align-center">
-            <a href="main1.html"><img src="images/home.png" alt="" /></a>
-            <a href="#" class="search-btn"
+            <a href="main1.html" title="Home"
+              ><img src="images/home.png" alt=""
+            /></a>
+            <a href="#" class="search-btn" title="Search"
               ><img src="images/search.png" alt=""
             /></a>
-            <a href="saved-stories.html"
+            <a href="saved-stories.html" title="Saved Stories"
               ><img src="images/saved-lists-active.png" alt=""
             /></a>
-            <a href="your-stories.html" class="y-s-btn"
+            <a href="your-stories.html" title="Your Stories" class="y-s-btn"
               ><img src="images/your-stories.png" alt=""
             /></a>
-            <a href="#" class="write-blog-btn"
+            <a href="#" class="write-blog-btn" title="Write a Story"
               ><img src="images/write-blog.png" alt=""
             /></a>
           </div>
@@ -380,6 +382,7 @@
         if (e.key === "Enter") {
           if (document.querySelector(".search-bar input").value.trim() !== "") {
             console.log(document.querySelector(".search-bar input").value);
+            document.querySelector(".search-bar input").value = "";
           }
         }
       });

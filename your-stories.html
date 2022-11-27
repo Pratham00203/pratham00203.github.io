@@ -9,23 +9,34 @@
   </head>
   <body class="d-flex justify-center">
     <div class="wrapper">
+      <div class="modal d-flex align-center justify-center">
+        <div class="d-m-in d-flex align-center justify-center flex-col">
+          <h1>Are you sure you want to delete this story?</h1>
+          <div class="d-m-btns d-flex justify-center" style="gap: 15px">
+            <button>Delete</button>
+            <button onclick="showDeleteModal()">Cancel</button>
+          </div>
+        </div>
+      </div>
       <div class="main-container d-flex">
         <div class="side-nav d-flex flex-col align-center">
           <a href="main1.html" class="side-nav-logo"
             ><img src="images/signature.png" alt=""
           /></a>
           <div class="main-menu d-flex flex-col align-center">
-            <a href="main1.html"><img src="images/home.png" alt="" /></a>
-            <a href="#" class="search-btn"
+            <a href="main1.html" title="Home"
+              ><img src="images/home.png" alt=""
+            /></a>
+            <a href="#" title="Search" class="search-btn"
               ><img src="images/search.png" alt=""
             /></a>
-            <a href="saved-stories.html"
+            <a title="Saved Stories" href="saved-stories.html"
               ><img src="images/saved-lists.png" alt=""
             /></a>
-            <a href="your-stories.html" class="y-s-btn"
+            <a title="Your Stories" href="your-stories.html" class="y-s-btn"
               ><img src="images/your-stories-active.png" alt=""
             /></a>
-            <a href="#" class="write-blog-btn"
+            <a href="#" title="Write a Story" class="write-blog-btn"
               ><img src="images/write-blog.png" alt=""
             /></a>
           </div>
@@ -63,16 +74,35 @@
                       be and this is..
                     </a>
                   </p>
-                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
                     Oct 26 &middot; 10 min read
                     <span class="h-s-attr-tag"
                       >&middot; <a href="#">Lifestyle</a></span
                     >
-
-                    <button class="btn" style="margin-left: auto">
-                      <img src="images/bookmark.png" alt="" />
-                    </button>
-                  </p>
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <a href="#" class="h-s-img"
                   ><img src="images/story-sample.jpg" alt=""
@@ -96,16 +126,35 @@
                       be and this is..
                     </a>
                   </p>
-                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
                     Oct 26 &middot; 10 min read
                     <span class="h-s-attr-tag"
                       >&middot; <a href="#">Lifestyle</a></span
                     >
-
-                    <button class="btn" style="margin-left: auto">
-                      <img src="images/bookmark.png" alt="" />
-                    </button>
-                  </p>
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <a href="#" class="h-s-img"
                   ><img src="images/story-sample.jpg" alt=""
@@ -129,16 +178,35 @@
                       be and this is..
                     </a>
                   </p>
-                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
                     Oct 26 &middot; 10 min read
                     <span class="h-s-attr-tag"
                       >&middot; <a href="#">Lifestyle</a></span
                     >
-
-                    <button class="btn" style="margin-left: auto">
-                      <img src="images/bookmark.png" alt="" />
-                    </button>
-                  </p>
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <a href="#" class="h-s-img"
                   ><img src="images/story-sample.jpg" alt=""
@@ -162,16 +230,35 @@
                       be and this is..
                     </a>
                   </p>
-                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
                     Oct 26 &middot; 10 min read
                     <span class="h-s-attr-tag"
                       >&middot; <a href="#">Lifestyle</a></span
                     >
-
-                    <button class="btn" style="margin-left: auto">
-                      <img src="images/bookmark.png" alt="" />
-                    </button>
-                  </p>
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <a href="#" class="h-s-img"
                   ><img src="images/story-sample.jpg" alt=""
@@ -195,16 +282,35 @@
                       be and this is..
                     </a>
                   </p>
-                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
                     Oct 26 &middot; 10 min read
                     <span class="h-s-attr-tag"
                       >&middot; <a href="#">Lifestyle</a></span
                     >
-
-                    <button class="btn" style="margin-left: auto">
-                      <img src="images/bookmark.png" alt="" />
-                    </button>
-                  </p>
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <a href="#" class="h-s-img"
                   ><img src="images/story-sample.jpg" alt=""
@@ -228,16 +334,35 @@
                       be and this is..
                     </a>
                   </p>
-                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
                     Oct 26 &middot; 10 min read
                     <span class="h-s-attr-tag"
                       >&middot; <a href="#">Lifestyle</a></span
                     >
-
-                    <button class="btn" style="margin-left: auto">
-                      <img src="images/bookmark.png" alt="" />
-                    </button>
-                  </p>
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <a href="#" class="h-s-img"
                   ><img src="images/story-sample.jpg" alt=""
@@ -261,16 +386,35 @@
                       be and this is..
                     </a>
                   </p>
-                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
                     Oct 26 &middot; 10 min read
                     <span class="h-s-attr-tag"
                       >&middot; <a href="#">Lifestyle</a></span
                     >
-
-                    <button class="btn" style="margin-left: auto">
-                      <img src="images/bookmark.png" alt="" />
-                    </button>
-                  </p>
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <a href="#" class="h-s-img"
                   ><img src="images/story-sample.jpg" alt=""
@@ -294,16 +438,35 @@
                       be and this is..
                     </a>
                   </p>
-                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
                     Oct 26 &middot; 10 min read
                     <span class="h-s-attr-tag"
                       >&middot; <a href="#">Lifestyle</a></span
                     >
-
-                    <button class="btn" style="margin-left: auto">
-                      <img src="images/bookmark.png" alt="" />
-                    </button>
-                  </p>
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <a href="#" class="h-s-img"
                   ><img src="images/story-sample.jpg" alt=""
@@ -327,16 +490,191 @@
                       be and this is..
                     </a>
                   </p>
-                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
                     Oct 26 &middot; 10 min read
                     <span class="h-s-attr-tag"
                       >&middot; <a href="#">Lifestyle</a></span
                     >
-
-                    <button class="btn" style="margin-left: auto">
-                      <img src="images/bookmark.png" alt="" />
-                    </button>
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
                   </p>
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <div
+                    class="h-s-attr d-flex align-center"
+                    style="gap: 5px; position: relative"
+                  >
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+                    <div
+                      class="story-btns d-flex"
+                      style="margin-left: auto; gap: 15px"
+                    >
+                      <ul class="story-menu d-flex flex-col">
+                        <li><a href="#">Check Stats</a></li>
+                        <li><a href="#">Edit Story</a></li>
+                        <li>
+                          <button class="btn" onclick="showDeleteModal()">
+                            Delete Story
+                          </button>
+                        </li>
+                      </ul>
+                      <button class="btn story-btn-cta">
+                        <img src="images/three-dots.png" alt="" />
+                      </button>
+                      <button class="btn">
+                        <img src="images/bookmark.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <a href="#" class="h-s-img"
                   ><img src="images/story-sample.jpg" alt=""
@@ -381,6 +719,7 @@
         if (e.key === "Enter") {
           if (document.querySelector(".search-bar input").value.trim() !== "") {
             console.log(document.querySelector(".search-bar input").value);
+            document.querySelector(".search-bar input").value = "";
           }
         }
       });
@@ -410,15 +749,39 @@
         }
       });
 
-      document
-        .querySelectorAll(
-          ".your-stories-main .h-s-container .h-s .h-s-info .h-s-attr .story-menu"
-        )
-        .forEach((i) => {
-          i.addEventListener("click", (e) => {
-            i.childNodes[1].classList.toggle("active");
+      window.addEventListener("click", (e) => {
+        if (e.target.parentNode.localName === "button") {
+          if (e.target.parentNode.classList.contains("story-btn-cta")) {
+            if (
+              e.target.parentNode.previousElementSibling.classList.contains(
+                "active"
+              )
+            ) {
+              e.target.parentNode.previousElementSibling.classList.remove(
+                "active"
+              );
+            } else {
+              e.target.parentNode.previousElementSibling.classList.add(
+                "active"
+              );
+            }
+          }
+        } else {
+          document.querySelectorAll(".story-btn-cta").forEach((i) => {
+            i.previousElementSibling.classList.remove("active");
           });
-        });
+        }
+      });
+
+      function showDeleteModal() {
+        if (document.querySelector(".modal").classList.contains("active")) {
+          document.querySelector(".modal").classList.remove("active");
+          document.querySelector(".main-container").classList.remove("blur");
+        } else {
+          document.querySelector(".modal").classList.add("active");
+          document.querySelector(".main-container").classList.add("blur");
+        }
+      }
     </script>
   </body>
 </html>

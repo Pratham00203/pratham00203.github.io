@@ -35,6 +35,7 @@ const Story = {
   viewsCount: "",
   totalMinutesToRead: "",
   postedOn: "",
+  updatedOn: "",
 };
 
 //Rating Schema
@@ -92,7 +93,6 @@ const ReportStories = {
   userId: "",
   storyId: "",
   description: "",
-  attachments: "",
   reportedOn: "",
 };
 
@@ -115,4 +115,10 @@ const Request = {
   username: "",
   description: "",
   attachments: "",
+};
+
+// Stores all the Banned User emails so that they cannot create new account using same email
+const RestrictedUser = {
+  id: "",
+  email: "",
 };

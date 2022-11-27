@@ -9,23 +9,38 @@
   </head>
   <body class="d-flex justify-center">
     <div class="wrapper">
+      <div class="modal d-flex align-center justify-center">
+        <div class="d-m-in d-flex align-center justify-center flex-col">
+          <h1>Report Story</h1>
+          <label for="report-desc" class="d-flex flex-col">
+            Reason for Reporting :
+            <textarea name="report-desc" placeholder="Write Here..."></textarea>
+          </label>
+          <div class="d-m-btns d-flex justify-center" style="gap: 15px">
+            <button>Report</button>
+            <button onclick="showDeleteModal()">Cancel</button>
+          </div>
+        </div>
+      </div>
       <div class="main-container d-flex">
         <div class="side-nav d-flex flex-col align-center">
           <a href="main1.html" class="side-nav-logo"
             ><img src="images/signature.png" alt=""
           /></a>
           <div class="main-menu d-flex flex-col align-center">
-            <a href="main1.html"><img src="images/home.png" alt="" /></a>
-            <a href="#" class="search-btn"
+            <a href="main1.html" title="Home"
+              ><img src="images/home.png" alt=""
+            /></a>
+            <a href="#" class="search-btn" title="Search"
               ><img src="images/search.png" alt=""
             /></a>
-            <a href="saved-stories.html"
+            <a href="saved-stories.html" title="Saved Stories"
               ><img src="images/saved-lists.png" alt=""
             /></a>
-            <a href="your-stories.html" class="y-s-btn"
+            <a href="your-stories.html" class="y-s-btn" title="Your Stories"
               ><img src="images/your-stories.png" alt=""
             /></a>
-            <a href="#" class="write-blog-btn"
+            <a href="#" class="write-blog-btn" title="Write a Story"
               ><img src="images/write-blog.png" alt=""
             /></a>
           </div>
@@ -74,7 +89,7 @@
                 <button class="btn">
                   <img src="images/bookmark.png" alt="" />
                 </button>
-                <button class="btn">
+                <button class="btn" onclick="showDeleteModal()">
                   <img src="images/red-flag.png" alt="" />
                 </button>
               </div>
@@ -204,7 +219,7 @@
                 <button class="btn">
                   <img src="images/bookmark.png" alt="" />
                 </button>
-                <button class="btn">
+                <button class="btn" onclick="showDeleteModal()">
                   <img src="images/red-flag.png" alt="" />
                 </button>
               </div>
@@ -425,6 +440,7 @@
         if (e.key === "Enter") {
           if (document.querySelector(".search-bar input").value.trim() !== "") {
             console.log(document.querySelector(".search-bar input").value);
+            document.querySelector(".search-bar input").value = "";
           }
         }
       });
@@ -505,6 +521,16 @@
           .querySelector(".text-speech-player")
           .classList.remove("active");
       });
+
+      function showDeleteModal() {
+        if (document.querySelector(".modal").classList.contains("active")) {
+          document.querySelector(".modal").classList.remove("active");
+          document.querySelector(".main-container").classList.remove("blur");
+        } else {
+          document.querySelector(".modal").classList.add("active");
+          document.querySelector(".main-container").classList.add("blur");
+        }
+      }
     </script>
   </body>
 </html>

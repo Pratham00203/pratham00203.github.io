@@ -442,6 +442,15 @@
       </div>
     </div>
     <script>
+      window.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          if (document.querySelector(".search-bar input").value.trim() !== "") {
+            console.log(document.querySelector(".search-bar input").value);
+            document.querySelector(".search-bar input").value = "";
+          }
+        }
+      });
+
       let buttons = document.querySelectorAll(" .home-sticky-bar button");
       buttons.forEach((btn) => {
         btn.addEventListener("click", () => {

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="d-flex justify-center">
+    <div class="wrapper">
+      <div class="main-container d-flex">
+        <div class="side-nav d-flex flex-col align-center">
+          <a href="main1.html" class="side-nav-logo"
+            ><img src="images/signature.png" alt=""
+          /></a>
+          <div class="main-menu d-flex flex-col align-center">
+            <a href="main1.html" title="Home"
+              ><img src="images/home.png" alt=""
+            /></a>
+            <a href="#" title="Search" class="search-btn"
+              ><img src="images/search.png" alt=""
+            /></a>
+            <a href="saved-stories.html" title="Saved Stories"
+              ><img src="images/saved-lists.png" alt=""
+            /></a>
+            <a href="your-stories.html" title="Your Stories" class="y-s-btn"
+              ><img src="images/your-stories.png" alt=""
+            /></a>
+            <a href="#" class="write-blog-btn" title="Write a Story"
+              ><img src="images/write-blog.png" alt=""
+            /></a>
+          </div>
+          <div class="user-menu">
+            <ul class="d-flex flex-col">
+              <li class="u-m-y-s-btn"><a href="#">Your Stories</a></li>
+              <li><a href="#">View Profile</a></li>
+              <li><a href="home.html">Sign out</a></li>
+            </ul>
+            <button><img src="images/profile-pic.jpg" alt="" /></button>
+          </div>
+        </div>
+        <section id="main">
+            <div class="m-a">
+                <div class="search-bar align-center d-flex">
+                  <img src="images/search-active.png" alt="" /><input
+                    type="text"
+                    name="query"
+                    placeholder="Search"
+                    autocomplete="off"
+                  />
+                </div>
+        </section>
+        <aside class="main-aside">
+          <div class="m-a">
+            <div class="search-bar align-center d-flex">
+              <img src="images/search-active.png" alt="" /><input
+                type="text"
+                name="query"
+                placeholder="Search"
+                autocomplete="off"
+              />
+            </div>
+            <div class="m-a-popup">
+              <h2>Writing on TheBloggr.</h2>
+              <p>Here are some tips :</p>
+              <ul class="d-flex flex-col">
+                <li>Have a Clear Subject.</li>
+                <li>Have a great headline.</li>
+                <li>Most importantly! Write from the heart</li>
+              </ul>
+              <a href="#">Start Writing</a>
+            </div>
+
+            <div class="other-links d-flex">
+              <a href="#">Help</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">About</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script>
+            window.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          if (document.querySelector(".search-bar input").value.trim() !== "") {
+            console.log(document.querySelector(".search-bar input").value);
+            document.querySelector(".search-bar input").value = ""
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
