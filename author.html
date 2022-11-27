@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuck Norris -TheBloggr.</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="d-flex justify-center">
+    <div class="wrapper">
+      <div class="modal d-flex align-center justify-center">
+        <div class="d-m-in d-flex align-center justify-center flex-col">
+          <h1>Report User</h1>
+          <label for="report-desc" class="d-flex flex-col">
+            Reason for Reporting :
+            <textarea name="report-desc" placeholder="Write Here..."></textarea>
+          </label>
+          <form enctype="multipart/form-data" class="attachments-form">
+            <label for="attachments">
+              Attachments (Optional) :
+              <input
+                type="file"
+                name="user_report_attachment"
+                accept="image/*"
+              />
+            </label>
+          </form>
+          <div class="d-m-btns d-flex justify-center" style="gap: 15px">
+            <button>Report</button>
+            <button onclick="showDeleteModal()">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <div class="main-container d-flex">
+        <div class="side-nav d-flex flex-col align-center">
+          <a href="main1.html" class="side-nav-logo"
+            ><img src="images/signature.png" alt=""
+          /></a>
+          <div class="main-menu d-flex flex-col align-center">
+            <a href="main1.html" title="Home"
+              ><img src="images/home.png" alt=""
+            /></a>
+            <a href="#" class="search-btn" title="Search"
+              ><img src="images/search.png" alt=""
+            /></a>
+            <a href="saved-stories.html" title="Saved Stories"
+              ><img src="images/saved-lists.png" alt=""
+            /></a>
+            <a href="your-stories.html" class="y-s-btn" title="Your Stories"
+              ><img src="images/your-stories.png" alt=""
+            /></a>
+            <a href="#" class="write-blog-btn" title="Write a Story"
+              ><img src="images/write-blog.png" alt=""
+            /></a>
+          </div>
+          <div class="user-menu">
+            <ul class="d-flex flex-col">
+              <li class="u-m-y-s-btn"><a href="#">Your Stories</a></li>
+              <li><a href="#">View Profile</a></li>
+              <li><a href="home.html">Sign out</a></li>
+            </ul>
+            <button><img src="images/profile-pic.jpg" alt="" /></button>
+          </div>
+        </div>
+        <section id="main">
+          <div class="author-details-section">
+            <div
+              class="author-cover-img"
+              style="background-image: url('images/sample-cover-img.jpeg')"
+            ></div>
+
+            <div class="author-header d-flex align-center">
+              <h1>Chuck Norris</h1>
+              <div class="author-cta-btns d-flex" style="gap: 15px">
+                <button class="follow">Follow</button>
+                <button class="btn" onclick="showDeleteModal()">
+                  <img src="images/red-flag.png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="author-home-title">
+              <p>Home</p>
+            </div>
+
+            <div class="author-stories h-s-container d-flex flex-col">
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+
+                    <button class="btn" style="margin-left: auto">
+                      <img src="images/bookmark.png" alt="" />
+                    </button>
+                  </p>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+
+                    <button class="btn" style="margin-left: auto">
+                      <img src="images/bookmark.png" alt="" />
+                    </button>
+                  </p>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+
+                    <button class="btn" style="margin-left: auto">
+                      <img src="images/bookmark.png" alt="" />
+                    </button>
+                  </p>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+
+                    <button class="btn" style="margin-left: auto">
+                      <img src="images/bookmark.png" alt="" />
+                    </button>
+                  </p>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+
+                    <button class="btn" style="margin-left: auto">
+                      <img src="images/bookmark.png" alt="" />
+                    </button>
+                  </p>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+
+                    <button class="btn" style="margin-left: auto">
+                      <img src="images/bookmark.png" alt="" />
+                    </button>
+                  </p>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+
+                    <button class="btn" style="margin-left: auto">
+                      <img src="images/bookmark.png" alt="" />
+                    </button>
+                  </p>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+              <div class="h-s align-center">
+                <div class="h-s-info">
+                  <a href="#" class="h-s-prof-cta d-flex align-center">
+                    <img src="images/profile-pic.jpg" alt="" />Robert Downey Jr.
+                  </a>
+                  <h2>
+                    <a href="#">
+                      6 Steps for Setting Measurable Goals to Avoid
+                      “Productivity Paranoia”
+                    </a>
+                  </h2>
+                  <p class="h-s-desc">
+                    <a href="#">
+                      With more people working in remote and hybrid environments
+                      than ever before, company, team and individual goals must
+                      be and this is..
+                    </a>
+                  </p>
+                  <p class="h-s-attr d-flex align-center" style="gap: 5px">
+                    Oct 26 &middot; 10 min read
+                    <span class="h-s-attr-tag"
+                      >&middot; <a href="#">Lifestyle</a></span
+                    >
+
+                    <button class="btn" style="margin-left: auto">
+                      <img src="images/bookmark.png" alt="" />
+                    </button>
+                  </p>
+                </div>
+                <a href="#" class="h-s-img"
+                  ><img src="images/story-sample.jpg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <aside class="main-aside">
+          <div class="m-a">
+            <div class="search-bar align-center d-flex">
+              <img src="images/search-active.png" alt="" /><input
+                type="text"
+                name="query"
+                placeholder="Search"
+                autocomplete="off"
+              />
+            </div>
+            <div class="author-profile">
+              <a href="#"><img src="images/profile-pic.jpg" alt="" /></a>
+              <h2><a href="#">Chuck Norris</a></h2>
+              <p>301 Followers</p>
+              <p>Software Engineer at Facebook</p>
+              <button class="follow">Follow</button>
+            </div>
+            <div class="m-a-popup">
+              <h2>Writing on TheBloggr.</h2>
+              <p>Here are some tips :</p>
+              <ul class="d-flex flex-col">
+                <li>Have a Clear Subject.</li>
+                <li>Have a great headline.</li>
+                <li>Most importantly! Write from the heart</li>
+              </ul>
+              <a href="#">Start Writing</a>
+            </div>
+            <div class="other-links d-flex">
+              <a href="#">Help</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">About</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          if (document.querySelector(".search-bar input").value.trim() !== "") {
+            console.log(document.querySelector(".search-bar input").value);
+            document.querySelector(".search-bar input").value = "";
+          }
+        }
+      });
+
+      document.querySelectorAll(".follow").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          if (e.target.innerText === "Follow") {
+            e.target.innerText = "Following";
+          } else {
+            e.target.innerText = "Follow";
+          }
+          e.target.classList.toggle("following");
+        });
+      });
+
+      let showModal = 1;
+      window.addEventListener("click", (e) => {
+        if (
+          e.target.parentNode ===
+          document.querySelector(".side-nav .user-menu > button")
+        ) {
+          if (showModal === 1) {
+            document
+              .querySelector(".side-nav .user-menu ul")
+              .classList.add("active");
+            showModal = 0;
+          } else {
+            document
+              .querySelector(".side-nav .user-menu ul")
+              .classList.remove("active");
+            showModal = 1;
+          }
+        } else {
+          document
+            .querySelector(".side-nav .user-menu ul")
+            .classList.remove("active");
+          showModal = 1;
+        }
+      });
+
+      function showDeleteModal() {
+        if (document.querySelector(".modal").classList.contains("active")) {
+          document.querySelector(".modal").classList.remove("active");
+          document.querySelector(".main-container").classList.remove("blur");
+        } else {
+          document.querySelector(".modal").classList.add("active");
+          document.querySelector(".main-container").classList.add("blur");
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 
+    
+    
+            
+          
+            -->

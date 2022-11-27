@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Topics</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="d-flex justify-center">
+    <div class="wrapper">
+      <div class="c-interests d-flex justify-center align-center">
+        <div class="c-wrapper">
+          <h1>Choose Topics you love to read.</h1>
+          <div class="sel-interest d-flex">
+            <!-- <button class="sel-int d-flex align-center">
+              Technology<img src="images/close.png" alt="" />
+            </button> -->
+          </div>
+          <div class="int-options">
+            <h2>Topics:</h2>
+            <div class="sug-options">
+              <button>Food</button>
+              <button>Travel</button>
+              <button>Technology</button>
+              <button>Health</button>
+              <button>Personality Development</button>
+              <button>Music</button>
+              <button>Entertainment</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let topics = document
+        .querySelectorAll(".sug-options button")
+        .forEach((t) => {
+          t.addEventListener("click", (e) => {
+            let option = document.createElement("button");
+            option.classList.add("sel-int", "d-flex", "align-center");
+            option.innerHTML = `${e.target.innerText} <img src="images/close.png" alt="" onclick="deleteOption(event)" />`;
+
+            document.querySelector(".sel-interest").appendChild(option);
+          });
+        });
+
+      function deleteOption(e) {
+        e.target.parentNode.remove();
+      }
+    </script>
+  </body>
+</html>
