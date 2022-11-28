@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Center</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="d-flex justify-center">
+    <div class="wrapper">
+      <div class="help-center">
+        <h1>Submit Feedback / Post a Query</h1>
+        <form
+          enctype="multipart/form-data"
+          class="d-flex flex-col"
+          style="gap: 35px"
+        >
+          <label for="email"
+            ><p>Your email address</p>
+
+            <input type="email" name="email" />
+            <p>Email address associated with your TheBloggr account.</p>
+          </label>
+          <label for="desc">
+            <p>Description</p>
+            <textarea name="desc"></textarea>
+            <p>
+              Please enter the details of your request. A member of our support
+              staff will respond as soon as possible.
+            </p>
+          </label>
+          <label for="username">
+            <p>Your Medium username(optional)</p>
+            <input type="text" name="username" />
+            <p>Username of the account associated with your email address</p>
+          </label>
+          <label for="attachments">
+            <p>Attachments(optional)</p>
+            <input type="file" name="attachments" />
+          </label>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <footer>
+        <a href="#" class="home-logo d-flex align-center"
+          ><img src="images/signature-white.png" alt="" /> TheBloggr.
+        </a>
+        <ul class="d-flex">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

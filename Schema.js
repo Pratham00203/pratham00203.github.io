@@ -94,6 +94,7 @@ const ReportStories = {
   storyId: "",
   description: "",
   reportedOn: "",
+  status: "", // Pending Review, Waiting for User Response, Resolved
 };
 
 //Report User Schema
