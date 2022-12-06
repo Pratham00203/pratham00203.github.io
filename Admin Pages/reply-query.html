@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respond to Query/Feedback</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="d-flex justify-center">
+    <div class="wrapper">
+      <div class="main-container d-flex">
+        <nav class="admin-side-nav d-flex flex-col">
+          <ul class="d-flex flex-col">
+            <li><a href="homepage.html">Dashboard</a></li>
+            <li><a href="all-users.html">Users</a></li>
+            <li><a href="all-stories.html">Stories</a></li>
+            <li><a href="#">Story Reports</a></li>
+            <li><a href="#">User Reports</a></li>
+            <li><a href="#">Restricted Users</a></li>
+            <li><a href="#">Queries/Feedback</a></li>
+
+            <hr />
+            <li class="create-admin"><a href="/">Create a Admin</a></li>
+            <li class="delete"><a href="#">Delete Admin</a></li>
+            <li class="delete"><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+        <section id="main">
+          <div class="reply-form">
+            <h1>Respond to Query/Feedback</h1>
+            <form enctype="multipart/form-data" class="d-flex flex-col">
+              <label for="to">
+                <p>Receiver's Email</p>
+                <input type="email" name="email" />
+              </label>
+              <label for="subject">
+                <p>Subject</p>
+                <input type="text" name="subject" />
+              </label>
+              <label for="text">
+                <p>Body</p>
+                <textarea name="text"></textarea>
+              </label>
+              <label for="attachments">
+                <p>Attachments</p>
+                <input type="file" name="attacments" />
+              </label>
+              <button>Respond</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>

@@ -1,7 +1,6 @@
 // User Schema
 const User = {
   id: "",
-  role: "", //User or Admin
   username: "",
   email: "",
   password: "",
@@ -9,6 +8,14 @@ const User = {
   coverImg: "",
   bio: "",
   interests: [],
+  createdAt: "",
+};
+
+const Admin = {
+  id: "",
+  username: "",
+  email: "",
+  password: "",
   createdAt: "",
 };
 
@@ -36,14 +43,6 @@ const Story = {
   totalMinutesToRead: "",
   postedOn: "",
   updatedOn: "",
-};
-
-//Rating Schema
-const Rating = {
-  id: "",
-  userid: "",
-  storyId: "",
-  rating: "",
 };
 
 //Bookmarks Schema
@@ -91,10 +90,11 @@ const Follow = {
 const ReportStories = {
   id: "",
   userId: "",
+  username: "",
   storyId: "",
   description: "",
   reportedOn: "",
-  status: "", // Pending Review, Waiting for User Response, Resolved
+  status: "", // Pending Review, Awaiting Response, Resolved
 };
 
 //Report User Schema
@@ -102,10 +102,13 @@ const ReportUser = {
   id: "",
   //User id of the person reporting the other user
   userId: "",
-  //Person who is being reported
-  reportedUser: "",
+  username: "",
+  //Id of Person who is being reported
+  reportedUserId: "",
+  reportedUserName: "",
   description: "",
   attachments: "",
+  status: "", // Pending Review, Awaiting Response, Resolved
   reportedOn: "",
 };
 
@@ -116,10 +119,22 @@ const Request = {
   username: "",
   description: "",
   attachments: "",
+  status: "", //Response Pending , Resolved
+  createdOn: "",
 };
 
 // Stores all the Banned User emails so that they cannot create new account using same email
 const RestrictedUser = {
   id: "",
   email: "",
+  restrictedOn: "",
+};
+
+const Response = {
+  id: "",
+  sendTo: "", //email of the receiver
+  attachments: "",
+  subject: "",
+  text: "",
+  respondedAt: "",
 };

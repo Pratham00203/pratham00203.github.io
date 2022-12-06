@@ -82,7 +82,7 @@ select:focus {
 .follow,
 .comments-section .comment-textarea button,
 .help-center form button,
-.update-user form > button,
+.update-user form .green-btn,
 .update-interests a {
   font-size: 1.4rem;
   color: #ffff;
@@ -101,7 +101,7 @@ select:focus {
 .follow,
 .comments-section .comment-textarea button,
 .help-center form button,
-.update-user form > button,
+.update-user form .green-btn,
 .update-interests a {
   background-color: rgb(26, 137, 23);
   transition: background-color 300ms linear;
@@ -113,7 +113,7 @@ select:focus {
 .follow:hover,
 .comments-section .comment-textarea button:hover,
 .help-center form button:hover,
-.update-user form > button:hover,
+.update-user form .green-btn:hover,
 .update-interests a:hover {
   background-color: rgb(15, 115, 12);
 }
@@ -1368,6 +1368,9 @@ textarea:focus {
 }
 
 /* Update User page */
+.update-user-section {
+  padding-bottom: 70px;
+}
 .update-user h1 {
   margin-top: 20px;
 }
@@ -1396,6 +1399,11 @@ textarea:focus {
 
 .update-user-section .author-home-title {
   margin-bottom: 30px;
+}
+
+.del-btn {
+  font-size: 1.4rem;
+  color: rgb(231, 8, 8);
 }
 
 .author-following-det {

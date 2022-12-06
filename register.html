@@ -12,16 +12,18 @@
       <div class="login-container d-flex justify-center align-center">
         <div class="login-form">
           <h1>Join TheBloggr.</h1>
-          <p class="login-text">Discover stories, thinking, and expertise from writers on any topic.</p>
+          <p class="login-text">
+            Discover stories, thinking, and expertise from writers on any topic.
+          </p>
           <form class="d-flex flex-col align-center">
             <div class="form-field">
-              <input type="email" name="email" placeholder="Email"/>
+              <input type="email" name="email" placeholder="Email" />
             </div>
             <div class="form-field password-field">
-              <input type="password" name="password" placeholder="Password"/>
+              <input type="password" name="password" placeholder="Password" />
               <img class="show-password-btn" src="images/eye.png" alt="" />
             </div>
-            <button type="submit" class="submit-btn"/>Sign Up</button>
+            <button type="submit" class="submit-btn">Sign Up</button>
           </form>
           <p>Already have an account? <a href="login.html">Sign In</a></p>
         </div>
@@ -30,16 +32,21 @@
 
     <script>
       let showPassword = 1;
-      document.querySelector('.show-password-btn').addEventListener('click',()=>{
-        if(showPassword === 1){
-          document.querySelector('.password-field input').setAttribute('type','text');
-          showPassword = 0;
-        }
-        else{
-          document.querySelector('.password-field input').setAttribute('type','password');
-          showPassword = 1;
-        }
-      })
+      document
+        .querySelector(".show-password-btn")
+        .addEventListener("click", () => {
+          if (showPassword === 1) {
+            document
+              .querySelector(".password-field input")
+              .setAttribute("type", "text");
+            showPassword = 0;
+          } else {
+            document
+              .querySelector(".password-field input")
+              .setAttribute("type", "password");
+            showPassword = 1;
+          }
+        });
     </script>
   </body>
 </html>

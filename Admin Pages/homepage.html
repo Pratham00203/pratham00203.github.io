@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="d-flex justify-center">
+    <div class="wrapper">
+      <div class="main-container d-flex">
+        <nav class="admin-side-nav d-flex flex-col">
+          <ul class="d-flex flex-col">
+            <li class="active"><a href="/">Dashboard</a></li>
+            <li><a href="all-users.html">Users</a></li>
+            <li><a href="all-stories.html">Stories</a></li>
+            <li><a href="#">Story Reports</a></li>
+            <li><a href="#">User Reports</a></li>
+            <li><a href="#">Restricted Users</a></li>
+            <li><a href="#">Queries/Feedback</a></li>
+
+            <hr />
+            <li class="create-admin"><a href="#">Create a Admin</a></li>
+            <li class="delete"><a href="#">Delete Admin</a></li>
+            <li class="delete"><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+        <section id="main">
+          <div class="homepage">
+            <h1>Dashboard</h1>
+            <div class="homepage-stats">
+              <div
+                class="a d-flex flex-col align-center"
+                style="text-align: center"
+              >
+                <h3>Total Users</h3>
+                <h2>2,434</h2>
+              </div>
+              <div class="b cover-bg d-flex justify-between">
+                <h3>Stories Published</h3>
+                <h2>3,402</h2>
+              </div>
+              <div class="c cover-bg d-flex justify-between">
+                <h3>Story Reports</h3>
+                <h2>34</h2>
+              </div>
+              <div class="d cover-bg d-flex justify-between">
+                <h3>User Reports</h3>
+                <h2>31</h2>
+              </div>
+              <div class="c cover-bg d-flex justify-between">
+                <h3>Queries / Feedbacks</h3>
+                <h2>350</h2>
+              </div>
+              <div class="d cover-bg d-flex justify-between">
+                <h3>Restricted Users</h3>
+                <h2>31</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

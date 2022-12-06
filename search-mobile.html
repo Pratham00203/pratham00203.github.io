@@ -41,15 +41,16 @@
           </div>
         </div>
         <section id="main">
-            <div class="m-a">
-                <div class="search-bar align-center d-flex">
-                  <img src="images/search-active.png" alt="" /><input
-                    type="text"
-                    name="query"
-                    placeholder="Search"
-                    autocomplete="off"
-                  />
-                </div>
+          <div class="m-a">
+            <div class="search-bar align-center d-flex">
+              <img src="images/search-active.png" alt="" /><input
+                type="text"
+                name="query"
+                placeholder="Search"
+                autocomplete="off"
+              />
+            </div>
+          </div>
         </section>
         <aside class="main-aside">
           <div class="m-a">
@@ -84,11 +85,11 @@
     </div>
 
     <script>
-            window.addEventListener("keypress", (e) => {
+      window.addEventListener("keypress", (e) => {
         if (e.key === "Enter") {
           if (document.querySelector(".search-bar input").value.trim() !== "") {
             console.log(document.querySelector(".search-bar input").value);
-            document.querySelector(".search-bar input").value = ""
+            document.querySelector(".search-bar input").value = "";
           }
         }
       });

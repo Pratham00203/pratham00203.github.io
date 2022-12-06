@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="d-flex justify-center">
+    <div class="wrapper">
+      <div class="main-container d-flex">
+        <nav class="admin-side-nav d-flex flex-col">
+          <ul class="d-flex flex-col">
+            <li><a href="homepage.html">Dashboard</a></li>
+            <li><a href="/">Users</a></li>
+            <li><a href="all-stories.html">Stories</a></li>
+            <li><a href="#">Story Reports</a></li>
+            <li><a href="#">User Reports</a></li>
+            <li><a href="#">Restricted Users</a></li>
+            <li><a href="#">Queries/Feedback</a></li>
+
+            <hr />
+            <li class="create-admin"><a href="#">Create a Admin</a></li>
+            <li class="delete"><a href="#">Delete Admin</a></li>
+            <li class="delete"><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+        <section id="main">
+          <div class="report-section">
+            <h2>Story Report (Example)</h2>
+            <table class="search-results" border="1">
+              <tr>
+                <td class="field">Report Id</td>
+                <td>08794398jygkdj8u364hgyusa6</td>
+              </tr>
+              <tr>
+                <td class="field">Created By(User Id)</td>
+                <td>08794398jygkdj8u364hgyusa6</td>
+              </tr>
+              <tr>
+                <td class="field">Created By(Username)</td>
+                <td>John Doe</td>
+              </tr>
+              <tr>
+                <td class="field">Story</td>
+                <td><a href="story.html">View Story</a></td>
+              </tr>
+              <tr>
+                <td class="field">Report Description</td>
+                <td>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellendus voluptate eveniet illum nisi eum numquam! Quidem
+                  quaerat cupiditate ex, doloribus sed, nam neque aperiam,
+                  tempora corporis optio doloremque. Animi pariatur culpa quasi
+                  ad cumque omnis accusantium placeat! Doloribus vitae illo quae
+                  quod cumque error culpa vel autem laborum deleniti sed,
+                  molestiae odio itaque exercitationem voluptatem? Iusto est
+                  aperiam suscipit debitis.
+                </td>
+              </tr>
+              <tr>
+                <td class="field">Reported On</td>
+                <td>May 15, 2020</td>
+              </tr>
+              <tr>
+                <td class="field">Status</td>
+                <td>Pending Review</td>
+              </tr>
+            </table>
+
+            <h2>User Report (Example)</h2>
+            <table class="search-results" border="1">
+              <tr>
+                <td class="field">Report Id</td>
+                <td>08794398jygkdj8u364hgyusa6</td>
+              </tr>
+              <tr>
+                <td class="field">Created By(User Id)</td>
+                <td>08794398jygkdj8u364hgyusa6</td>
+              </tr>
+              <tr>
+                <td class="field">Created By(Username)</td>
+                <td><a href="#">John Doe</a></td>
+              </tr>
+
+              <tr>
+                <td class="field">Reported User (User Id)</td>
+                <td>08794398jygkdj8u364hgyusa6</td>
+              </tr>
+              <tr>
+                <td class="field">Reported User (Username)</td>
+                <td><a href="#">Chuck Norris</a></td>
+              </tr>
+              <tr>
+                <td class="field">Report Description</td>
+                <td>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellendus voluptate eveniet illum nisi eum numquam! Quidem
+                  quaerat cupiditate ex, doloribus sed, nam neque aperiam,
+                  tempora corporis optio doloremque. Animi pariatur culpa quasi
+                  ad cumque omnis accusantium placeat! Doloribus vitae illo quae
+                  quod cumque error culpa vel autem laborum deleniti sed,
+                  molestiae odio itaque exercitationem voluptatem? Iusto est
+                  aperiam suscipit debitis.
+                </td>
+              </tr>
+              <tr>
+                <td class="field">Attachments</td>
+                <td>
+                  <a href="#">View File</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="field">Reported On</td>
+                <td>May 15, 2020</td>
+              </tr>
+              <tr>
+                <td class="field">Status</td>
+                <td>Pending Review</td>
+              </tr>
+            </table>
+
+            <div class="user-section-cta d-flex">
+              <a href="#">Raise an Issue</a>
+              <a href="#">Mark as Awaiting Response</a>
+              <a href="#">Mark as Resolved</a>
+              <button class="delete">Delete Report</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Admin</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="d-flex justify-center">
+    <div class="wrapper">
+      <div class="main-container d-flex">
+        <nav class="admin-side-nav d-flex flex-col">
+          <ul class="d-flex flex-col">
+            <li><a href="homepage.html">Dashboard</a></li>
+            <li><a href="all-users.html">Users</a></li>
+            <li><a href="all-stories.html">Stories</a></li>
+            <li><a href="#">Story Reports</a></li>
+            <li><a href="#">User Reports</a></li>
+            <li><a href="#">Restricted Users</a></li>
+            <li><a href="#">Queries/Feedback</a></li>
+
+            <hr />
+            <li class="create-admin active"><a href="/">Create a Admin</a></li>
+            <li class="delete"><a href="#">Delete Admin</a></li>
+            <li class="delete"><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+        <section id="main">
+          <div class="create-admin">
+            <div class="login-container d-flex justify-center align-center">
+              <div class="login-form">
+                <h1>Create Admin</h1>
+                <p class="login-text">
+                  Create a admin to access admin related functionalities.
+                </p>
+                <form class="d-flex flex-col align-center">
+                  <div class="form-field">
+                    <input type="email" name="email" placeholder="Email" />
+                  </div>
+                  <div class="form-field password-field">
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                    />
+                    <img
+                      class="show-password-btn"
+                      src="images/eye.png"
+                      alt=""
+                    />
+                  </div>
+                  <button type="submit" class="submit-btn">Create</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      let showPassword = 1;
+      document
+        .querySelector(".show-password-btn")
+        .addEventListener("click", () => {
+          if (showPassword === 1) {
+            document
+              .querySelector(".password-field input")
+              .setAttribute("type", "text");
+            showPassword = 0;
+          } else {
+            document
+              .querySelector(".password-field input")
+              .setAttribute("type", "password");
+            showPassword = 1;
+          }
+        });
+    </script>
+  </body>
+</html>

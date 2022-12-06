@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Queries/Feedbacks</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="d-flex justify-center">
+    <div class="wrapper">
+      <div class="main-container d-flex">
+        <nav class="admin-side-nav d-flex flex-col">
+          <ul class="d-flex flex-col">
+            <li><a href="homepage.html">Dashboard</a></li>
+            <li><a href="/">Users</a></li>
+            <li><a href="all-stories.html">Stories</a></li>
+            <li><a href="#">Story Reports</a></li>
+            <li><a href="#">User Reports</a></li>
+            <li><a href="#">Restricted Users</a></li>
+            <li class="active"><a href="/">Queries/Feedbacks</a></li>
+            <hr />
+            <li class="create-admin"><a href="#">Create a Admin</a></li>
+            <li class="delete"><a href="#">Delete Admin</a></li>
+            <li class="delete"><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+        <section id="main">
+          <div class="all-users-section">
+            <div class="search-bar align-center d-flex">
+              <img src="images/search-active.png" alt="" /><input
+                type="text"
+                name="query"
+                placeholder="Search Query/Feedback"
+                autocomplete="off"
+              />
+            </div>
+            <div class="report-status-select">
+              <span>Status : </span>
+              <select name="status">
+                <option value="Response Pending">Response Pending</option>
+                <option value="Resolved">Resolved</option>
+              </select>
+            </div>
+            <div class="reports active" data-status="Response Pending">
+              <table
+                class="search-results"
+                border="1"
+                style="border-collapse: collapse"
+              >
+                <thead>
+                  <tr class="header">
+                    <td>Created By(Email)</td>
+                    <td>Created By(Username)</td>
+                    <td>Created On</td>
+                    <td>Action</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>chucknorris@gmail.com</td>
+                    <td>Chuck Norris</td>
+                    <td>Oct 20, 2021</td>
+                    <td>
+                      <a href="#">View Query/Feedback</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>chucknorris@gmail.com</td>
+                    <td>Chuck Norris</td>
+                    <td>Oct 20, 2021</td>
+                    <td>
+                      <a href="#">View Query/Feedback</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>chucknorris@gmail.com</td>
+                    <td>Chuck Norris</td>
+                    <td>Oct 20, 2021</td>
+                    <td>
+                      <a href="#">View Query/Feedback</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>chucknorris@gmail.com</td>
+                    <td>Chuck Norris</td>
+                    <td>Oct 20, 2021</td>
+                    <td>
+                      <a href="#">View Query/Feedback</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>chucknorris@gmail.com</td>
+                    <td>Chuck Norris</td>
+                    <td>Oct 20, 2021</td>
+                    <td>
+                      <a href="#">View Query/Feedback</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      document
+        .querySelector('select[name="status"]')
+        .addEventListener("input", (e) => {
+          let option = e.target.value;
+          document.querySelectorAll(".reports").forEach((r) => {
+            r.classList.remove("active");
+          });
+          document
+            .querySelector(`div[data-status="${option}"]`)
+            .classList.add("active");
+        });
+    </script>
+  </body>
+</html>
