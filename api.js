@@ -2,7 +2,7 @@
 //   method: "POST",
 //   headers: {
 //     "content-type": "application/x-www-form-urlencoded",
-//     "X-RapidAPI-Key": "e68612564amsh14082fdf2625beap1d8643jsna96fba3910e3",
+//     "X-RapidAPI-Key": "[rapid-api-key]",
 //     "X-RapidAPI-Host": "neutrinoapi-bad-word-filter.p.rapidapi.com",
 //   },
 // };
