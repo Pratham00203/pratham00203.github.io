@@ -1136,7 +1136,11 @@ textarea:focus {
 
 .people-res .people-info .people-det h2 {
   margin-bottom: 5px;
+}
+
+.people-res .people-info .people-det h2 a {
   font-size: 1.6rem;
+  color: #000;
 }
 .people-res .people-info .people-det p {
   font-size: 1.3rem;
