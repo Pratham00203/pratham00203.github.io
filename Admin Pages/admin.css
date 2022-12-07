@@ -190,6 +190,7 @@ textarea:focus {
 
 .admin-side-nav ul li.delete {
   color: rgb(231, 8, 8);
+  cursor: pointer;
 }
 
 #main {

@@ -13,22 +13,24 @@
         <nav class="admin-side-nav d-flex flex-col">
           <ul class="d-flex flex-col">
             <li><a href="homepage.html">Dashboard</a></li>
-            <li><a href="/">Users</a></li>
+            <li><a href="all-users.html">Users</a></li>
             <li><a href="all-stories.html">Stories</a></li>
-            <li><a href="#">Story Reports</a></li>
-            <li><a href="#">User Reports</a></li>
-            <li><a href="#">Restricted Users</a></li>
-            <li><a href="#">Queries/Feedback</a></li>
+            <li><a href="story-reports.html">Story Reports</a></li>
+            <li><a href="user-reports.html">User Reports</a></li>
+            <li><a href="restricted-users.html">Restricted Users</a></li>
+            <li><a href="queries.html">Queries/Feedback</a></li>
 
             <hr />
-            <li class="create-admin"><a href="#">Create a Admin</a></li>
-            <li class="delete"><a href="#">Delete Admin</a></li>
-            <li class="delete"><a href="#">Logout</a></li>
+            <li class="create-admin">
+              <a href="create-admin.html">Create a Admin</a>
+            </li>
+            <li class="delete">Delete Admin</li>
+            <li class="delete">Logout</li>
           </ul>
         </nav>
         <section id="main">
           <div class="story-section">
-            <h2>Details of the user who reported :</h2>
+            <!-- <h2>Details of the user who reported :</h2>
             <table class="search-results" border="1">
               <tr>
                 <td class="field">User Id</td>
@@ -79,7 +81,7 @@
                 <td class="field">Reports (Resolved)</td>
                 <td>1</td>
               </tr>
-            </table>
+            </table> -->
 
             <div class="story-details">
               <h2>Story Details</h2>
@@ -185,7 +187,7 @@
             </div>
 
             <div class="user-section-cta d-flex">
-              <a href="#">View Reports</a>
+              <a href="story-reports.html">View Reports</a>
               <button class="delete">Delete Story</button>
             </div>
           </div>
